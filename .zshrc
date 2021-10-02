@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git kubectl)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -101,11 +101,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 vim() STTY=-ixon command vim "$@"
 
-eval "$(starship init zsh)"
-
-# NVM configuration
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
 
 # FZF configuration
 if type rg &> /dev/null; then
@@ -113,11 +108,9 @@ if type rg &> /dev/null; then
   export FZF_DEFAULT_OPTS='-m --height 50% --border'
 fi
 
-#Ruby RBNV config
-eval "$(rbenv init -)"
 
 #Tmux config
-export TERM="screen-256color"
+export TERM="xterm-256color"
 
 #Golang config
 export GOPATH=$HOME/go
