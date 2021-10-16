@@ -315,7 +315,7 @@ mode "$mode_gaps_left" {
 
 # i3 Gaps config
 gaps inner 10
-gaps outer 10
+gaps outer 2
 
 # Nitrogen
 exec_always nitrogen --restore
