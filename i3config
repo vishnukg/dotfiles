@@ -318,10 +318,10 @@ gaps inner 10
 gaps outer 10
 
 # Nitrogen
-exec nitrogen --restore
+exec_always nitrogen --restore
 
 # Picom
-exec picom -f
+exec_always picom -f
 
 # Keyboard repeat
 exec_always --no-startup-id xset r rate 300 50
