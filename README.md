@@ -9,3 +9,4 @@ redshift for reading location value.
 7. pcmanfm is used as the file manager
 8. lxappearance is used to control themes,icons etc
 9. Nitrogen is used to manage wallpapers
+10. Redshift uses manual config for location. Geoclue2 is flaky
