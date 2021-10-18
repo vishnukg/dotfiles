@@ -315,7 +315,6 @@ mode "$mode_gaps_left" {
 
 # i3 Gaps config
 gaps inner 10
-gaps outer 2
 
 # Nitrogen
 exec_always nitrogen --restore
@@ -341,3 +340,9 @@ default_floating_border pixel 1
 # Betterlockscreeen
 # set desktop background with custom effect
 bindsym $mod+shift+x exec betterlockscreen -l dim
+
+# Redshift config
+exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
+
+# Autostart redshift-gtk
+exec --no-startup-id redshift-gtk
