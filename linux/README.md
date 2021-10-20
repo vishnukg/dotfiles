@@ -10,3 +10,4 @@ redshift for reading location value.
 8. lxappearance is used to control themes,icons etc
 9. Nitrogen is used to manage wallpapers
 10. Redshift uses manual config for location. Geoclue2 is flaky
+11. Enable FSTRIM timer to periofically run FSTRIM service so trim ssd -> systemctl enable --now fstrim.timer
