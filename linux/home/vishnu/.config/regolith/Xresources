@@ -1,0 +1,7 @@
+gnome.terminal.font: Fira Code Medium 14
+gnome.terminal.background-transparency-percent:30
+gnome.terminal.use-transparent-background:true
+gnome.wallpaper:/home/vishnu/Pictures/837259.jpg
+i3-wm.bar.position:top
+i3-wm.gaps.inner.size: 10
+i3-wm.bar.trayoutput: primary
