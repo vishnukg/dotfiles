@@ -11,3 +11,5 @@ redshift for reading location value.
 9. Nitrogen is used to manage wallpapers
 10. Redshift uses manual config for location. Geoclue2 is flaky
 11. Enable FSTRIM timer to periofically run FSTRIM service so trim ssd -> systemctl enable --now fstrim.timer
+12. Make sure intel-microcode package is installed to support wide screen monitors.
+13. Make sure xbacklight is installed to support adjusting screen brightness
