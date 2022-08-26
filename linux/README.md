@@ -13,3 +13,5 @@ redshift for reading location value.
 11. Enable FSTRIM timer to periofically run FSTRIM service so trim ssd -> systemctl enable --now fstrim.timer
 12. Make sure intel-microcode package is installed to support wide screen monitors.
 13. Make sure xbacklight is installed to support adjusting screen brightness
+14. Add this to the grub at /etc/default/grub to support backlight
+    - GRUB_CMDLINE_LINUX_DEFAULT="quiet splash pcie_aspm=force acpi_backlight=native"
