@@ -15,3 +15,22 @@ redshift for reading location value.
 13. Make sure xbacklight is installed to support adjusting screen brightness
 14. Add this to the grub at /etc/default/grub to support backlight
     - GRUB_CMDLINE_LINUX_DEFAULT="quiet splash pcie_aspm=force acpi_backlight=native"
+    
+15 More instructions to get backlight working. Dont do step 14 if you did step 15
+    
+Installed brightnessctl.
+
+Added my user to the video group:
+
+ sudo usermod -aG video $USER
+Added keybindings to ~/.config/i3/config:
+
+ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl --min-val=2 -q set 3%-
+ bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl -q set 3%+
+And reloaded the i3 config with Mod-Shift-R.
+
+Github link to brightnessctl:
+
+https://github.com/Hummer12007/brightnessctl
+
+
