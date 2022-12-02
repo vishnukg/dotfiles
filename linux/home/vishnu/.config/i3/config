@@ -336,10 +336,9 @@ exec_always --no-startup-id /usr/bin/setxkbmap -option "ctrl:nocaps"
 default_border pixel 1
 default_floating_border pixel 1
 
+#i3lock black screen
+bindsym $mod+shift+x exec "i3lock -c 000000"
 
-# Betterlockscreeen
-# set desktop background with custom effect
-bindsym $mod+shift+x exec betterlockscreen -l dim
 
 # Redshift config
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
