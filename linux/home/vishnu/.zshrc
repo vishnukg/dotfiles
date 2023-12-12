@@ -116,3 +116,8 @@ export TERM="xterm-256color"
 export GOPATH=$HOME/go
 PATH=$PATH:$GOPATH/bin
 PATH=$PATH:/usr/local/go/bin
+
+#Volta setting
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
