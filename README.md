@@ -44,3 +44,17 @@ case $1/$2 in
 	modprobe iwlmvm iwlwifi
 	;;
 esac
+
+
+Adjust desktop settings by adding the following to 
+
+~/.Xresources
+
+Xft.dpi: 144
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+Xcursor.size: 80
