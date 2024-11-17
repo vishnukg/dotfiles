@@ -1,5 +1,3 @@
-#location ~/.Xresources
-
 Xft.dpi: 144
 Xft.autohint: 0
 Xft.lcdfilter: lcddefault
