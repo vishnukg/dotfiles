@@ -14,12 +14,33 @@ https://github.com/AdnanHodzic/auto-cpufreq
 
 
 Install Brightnessctl for increasing/decreasing brightness from keyboard
+
 Added my user to the video group:
 sudo usermod -aG video $USER
+
 Added keybindings to ~/.config/i3/config:
+
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl --min-val=2 -q set 3%-
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl -q set 3%+
+
 And reloaded the i3 config with Mod-Shift-R.
+
 Github link to brightnessctl:
 https://github.com/Hummer12007/brightnessctl
 
+Fix for wifi crashloop after suspend linux i3
+
+[SOLUTION]
+Add the following file and don't forget to chmod +x it.
+/usr/lib/systemd/system-sleep/iwlwifi.sh:
+
+#!/bin/sh
+
+case $1/$2 in
+	pre/*)
+	modprobe -r iwlmvm iwlwifi
+	;;
+	post/*)
+	modprobe iwlmvm iwlwifi
+	;;
+esac
