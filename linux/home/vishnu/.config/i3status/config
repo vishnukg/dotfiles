@@ -9,7 +9,7 @@
 general {
 	 output_format = "i3bar"
 	 colors = true
-	 color_good = "#67D5FF"
+	 color_good = "#32CD32"
 	 color_degraded = "#FDFF67"
 	 color_bad = "#FF594B"
 }
@@ -35,6 +35,8 @@ ethernet _first_ {
 
 battery all {
         format = " %status %percentage "
+        low_threshold = 30
+        threshold_type = percentage
 }
 
 disk "/" {
@@ -57,4 +59,3 @@ volume master {
 tztime local {
         format = " %d-%m-%Y %H:%M:%S"
 }
-
