@@ -34,17 +34,12 @@ Fix for wifi crashloop after suspend linux i3
 Add the following file and don't forget to chmod +x it.
 /usr/lib/systemd/system-sleep/iwlwifi.sh:
 
-#!/bin/sh
+check the iwlwifi.sh file committed in the repo
 
-case $1/$2 in
-	pre/*)
-	modprobe -r iwlmvm iwlwifi
-	;;
-	post/*)
-	modprobe iwlmvm iwlwifi
-	;;
-esac
+if the above doesn't work do the following 
+Create the file "/etc/modprobe.d/iwlmvm.conf" if it doesn't exist already, and add the following too it:
 
+options iwlmvm power_scheme=1
 
 Adjust desktop settings by adding the following to 
 
