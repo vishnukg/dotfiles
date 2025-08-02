@@ -45,8 +45,7 @@ disk "/" {
 
 memory {
 	format = " MEM: %used "
-
-
+}
 cpu_usage {
 	format = " CPU: %usage "
 }
